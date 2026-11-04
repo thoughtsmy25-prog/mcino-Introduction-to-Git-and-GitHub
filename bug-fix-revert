@@ -1,0 +1,12 @@
+Command (run in Windows PowerShell):
+
+curl.exe -L -sS https://api.github.com/repos/ibm-developer-skills-network/mcino-Introduction-to-Git-and-GitHub/pulls/13342 | ConvertFrom-Json | ForEach-Object { "Pull Request: #$($_.number)"; "Title: $($_.title)"; "State: $($_.state)"; "Forked Repository: $($_.head.repo.full_name)"; "Source Branch: $($_.head.ref)"; "Base Repository: $($_.base.repo.full_name)" }
+
+Terminal output:
+
+Pull Request: #13342
+Title: Bug fix revert
+State: closed
+Forked Repository: thoughtsmy25-prog/mcino-Introduction-to-Git-and-GitHub
+Source Branch: bug-fix-revert
+Base Repository: ibm-developer-skills-network/mcino-Introduction-to-Git-and-GitHub
