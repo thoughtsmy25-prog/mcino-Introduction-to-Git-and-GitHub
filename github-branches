@@ -1,0 +1,15 @@
+Command (run after fetching the latest remote branches):
+
+git fetch origin
+git branch -r -v
+
+Terminal output:
+
+  origin/bug-fix-revert   552a08e Revert "Fix copyright year typo in README"
+  origin/bug-fix-typo     4f5f274 Restore original simple interest script content
+  origin/main             4620463 Add pull request verification command and output
+
+Branch status:
+- origin/main: default branch
+- origin/bug-fix-typo: remote typo-fix branch
+- origin/bug-fix-revert: remote revert branch
